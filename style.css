@@ -9,15 +9,47 @@ body {
     font-family: 'Rubik Mono One', sans-serif;
 }
 
-/* LAYOUT */
 
-.full-section {
+/* NAVIGATION */
+
+.navigation {
+    position: fixed;
+    top: 30px;
+    right: 50px;
+    z-index: 10;
+
+
+}
+
+.navigation ul li {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    
+}
+
+.navigation ul li a {
+    
+    background: white;
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+   
+
+}
+
+/* BLOCK 1 LAYOUT */
+
+.section1 {
     position: relative;
     background: red;
     height: 100vh;
 }
 
-.full-section .content {
+.section1 .content {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -27,5 +59,41 @@ body {
 .content .yellow {
     text-align: center;
     color: yellow;
+    font-size: 50px;
+}
+
+/* BLOCK 2 LAYOUT */
+
+.section2 {
+    position: relative;
+    background: green;
+    height: 100vh;
+}
+
+.section2 .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* BLOCK 3 LAYOUT */
+
+.section3 {
+    position: relative;
+    background: yellow;
+    height: 100vh;
+}
+
+.section3 .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.content .green {
+    text-align: center;
+    color: green;
     font-size: 50px;
 }
