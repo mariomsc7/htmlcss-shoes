@@ -6,5 +6,26 @@
 }
 
 body {
-    
+    font-family: 'Rubik Mono One', sans-serif;
+}
+
+/* LAYOUT */
+
+.full-section {
+    position: relative;
+    background: red;
+    height: 100vh;
+}
+
+.full-section .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.content .yellow {
+    text-align: center;
+    color: yellow;
+    font-size: 50px;
 }
